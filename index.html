@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a ref="#" >
+                    <img src="images/logo.png" alt="Logo E.K" style="width:200px; height:200px;">
+                </a>
+            </div><!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex"> <!--classe universal-->
+                    <div class="txt-topo-site">
+                        <h1>TECNOLOGIA, INOVAÇÃO E GESTÃO DE PESSOAS<span>.</span></h1>
+                        <p>A tecnologia é uma ferramenta poderosa, mas são as pessoas que a impulsionam. </p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div><!--btn-contato-->
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/Foto_Ellen.png" alt=""style="width:250px; height:250px;">
+                    </div><!--img-topo-site-->
+                </div><!--Flex-->
+            </div><!--Interface-->
+        </section><!--Topo_do_site-->
+
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-palette"></i>
+                        <h3>Front-End</h3>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Back-End</h3>
+                        <p>PHP</p>
+                        <p>Java</p>
+                        <p>SQL (MySql)</p>
+                    </div><!--especialidades-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-people"></i>
+                        <h3>Gestão de Pessoas</h3>
+                        <p>Liderança</p>
+                        <p>Gestão de projetos</p>
+                        <p>Desenvolvimento de Equipes</p>
+                    </div><!--especialidades-box-->
+                </div> <!--flex-->
+            </div> <!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto_ellen_sobre.jpg" alt="" style="width: 250px;height: 350px;">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU ELLEN KARLA.</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae recusandae harum accusantium, facilis unde atque deserunt? Sed id et voluptatibus animi dolore possimus accusamus nihil consequuntur. Ab hic aspernatur nobis!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat autem vitae modi a facilis, debitis ea, voluptas inventore delectus, illo excepturi libero. Vero delectus repudiandae provident quisquam perspiciatis aliquam!</p>
+                        <div class="btn-social">
+                            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                            <a href=""><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div><!--txt-sobre-->
+                   
+                </div><!--Flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image:url(images/projeto2.jpeg);">
+                        <div class="overlay">Projeto:Doe Vida</div>
+                    </div>
+                    <div class="img-port" style="background-image:url(images/projeto1.jpeg);" >
+                        <div class="overlay">Projeto: Estante Web</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/projeto2.jpeg)">
+                        <div class="overlay">Projeto: Futuro</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome" required>
+                    <input type="text" name="" id="" placeholder="Seu email" required>
+                    <input type="text" name="" id="" placeholder="Seu celular">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div><!--btn-enviar-->
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+
+</body>
+</html>

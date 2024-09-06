@@ -1,0 +1,306 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+body{
+    background-color:#000;
+    height:100vh; /*altura padrão*/
+}
+
+.interface{
+    max-width:1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display:flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size:18px;
+    font-weight:600; /*negrito*/
+    background-color:rgb(243, 36, 71);
+    border:0; /*tira a borda*/
+    border-radius:30px;
+    cursor:pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color:#fff;
+    font-size:38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:rgb(243, 36, 71);
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px rgba(251, 7, 48, 0.84); /*sombra na vertical, horizontal e eespalhamento e cor da sombra*/
+    transform: scale(1.05);
+}
+
+/* ESTILO CABEÇALHO */
+header{
+    padding:40px 4%;
+}
+
+header > .interface{ /*procura os elementos que possuam a classe interface dentro do header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #d4d2d2;
+    text-decoration:none;
+    display:inline-block;/*tranformo em inline-block  para funcionar o transform (zoom)*/
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(243, 36, 71);
+    text-decoration:none;
+    transform:scale(1.05); /*Zoom: só funciona para elemento block level*/
+}
+
+header nav ul{
+    list-style-type: none; /*tira os marcadores*/
+}
+
+header nav ul li{
+   display: inline-block; /*as linha as listas*/
+   padding: 0 40px; /*0px em cima e embaixo e 40px na equerda e direita*/
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size:18px;
+    font-weight:600; /*negrito*/
+    background-color:rgb(243, 36, 71);
+    border:0; /*tira a borda*/
+    border-radius:30px;
+    cursor:pointer;
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size:42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color:rgba(251, 7, 48, 0.84);
+}
+
+.topo-do-site .txt-topo-site p{
+    color:#fff;
+    margin:40px 0;
+}
+.topo-do-site .img-topo-site img{
+    position:relative; /*a animação flutuar ativa aqui*/
+    animation:flutuar 2s ease-in-out infinite alternate; /*animação, duração,velocidade(suave, rápida e termina suave), infinitamente funciona e alterna (0% a 100%, de 100% a 0%)*/
+}
+
+/* Animação da imagem */
+@keyframes flutuar{
+    0%{
+        top:0;  /* Só vai funcionar se o elemento tiver position relative ou absolute, fixed, diferente de static*/
+    }
+    100%{
+        top:30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADE */
+section.especialidades{
+    padding:40px 4%;
+    display:flex; /*eu adicionei*/
+    justify-content: center; /*eu adicionei*/
+}
+
+section.especialidades .flex{
+    gap:60px;
+}
+.especialidades .especialidades-box{
+    color:#fff;
+    padding:40px;
+    /* border: 2px solid #fff; */
+    margin-top:45px;
+    border-radius:20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 28px #ffffff6e;
+}
+
+.especialidades .especialidades-box i{
+    font-size:70px;
+    color: rgba(251, 7, 48, 0.84);
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom:30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgba(251, 7, 48, 0.84);
+    display:block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align:justify
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:none;
+    background-color: rgba(251, 7, 48, 0.84);
+    font-size: 22px;
+    cursor:pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* .sobre .txt-sobre .btn-social i{
+    font-size: 25px;
+} */
+
+/* ESTILO PORTFÓLIO */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 221, 0.185);
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top:60px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    /* background-color: rgba(251, 7, 48, 0.84);; */
+    background-size: cover; /*tamanho da tela de fundo ajustada*/
+    background-position: 100% 0%; /*a imagem inicia em cima* (posicionamento horizontal e vertical 0%(inicia no topo)*/
+    transition: 8s;
+    cursor:pointer;
+    border-radius:40px;
+    position:relative;
+
+}
+.img-port:hover{
+    background-position: 100% 100%;/*quando passar o cursor a imagem vai para o final*/
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 1, 4, 0.69);
+    border-radius: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600; /*negrito*/
+    color: #fff;
+    opacity: 0; /*o overlay some, fica transparente*/
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity:1;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO*/
+section.formulario{
+    padding:80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 0; /*tira borda*/
+    outline: 0; /*tira contorno*/
+    padding: 20px 15px;
+    border-radius:15px;
+    color: #fff;
+    font-size:18px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgba(251, 7, 48, 0.601);
+}
+
+form textarea{
+    resize: nome; /*não deixa aumentar e diminuir de tamanho o textarea*/
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width:120px;
+    background-color: rgba(251, 7, 48, 0.84);
+    color:#000;
+    font-weight: 700;/*negrito*/
+    cursor: pointer;
+    transition:.2s;
+}
