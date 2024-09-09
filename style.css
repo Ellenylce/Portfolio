@@ -32,7 +32,7 @@ body{
 }
 
 h2.titulo{
-    color:#fff;
+    color:#045667;
     font-size:38px;
     text-align: center;
 }
@@ -63,7 +63,7 @@ header .interface .logo a img{
 }
 
 header a{
-    color: #d4d2d2;
+    color: #054350;
     text-decoration:none;
     display:inline-block;/*tranformo em inline-block  para funcionar o transform (zoom)*/
     transition: .2s;
@@ -98,6 +98,7 @@ header nav.menu-desktop ul li{
 .btn-abrir-menu i{
     color:rgb(243, 36, 71);
     font-size: 40px;
+    display:none;
 }
 .menu-mobile{
     background-color: #000;
@@ -211,7 +212,7 @@ section.especialidades .flex{
     gap:60px;
 }
 .especialidades .especialidades-box{
-    color:#fff;
+    color:#ffffff;
     padding:40px;
     border: 2px solid #ffffff2a;
     margin-top:45px;
@@ -241,6 +242,47 @@ section.especialidades .flex{
     display:flex;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+/* ESTILO PARA SOFTSKILLS */
+section.SoftSkills{
+    padding:40px 4%;
+    display:flex; /*eu adicionei*/
+    justify-content: center; /*eu adicionei*/
+}
+
+section.SoftSkills .flex{
+    gap:30px;
+}
+
+.SoftSkills .SoftSkills-box{
+    color:#ffffff;
+    padding:40px;
+    border: 2px solid #ffffff2a;
+    margin-top:45px;
+    border-radius:20px;
+    transition: .2s;
+    width: 300px;
+}
+
+.SoftSkills .SoftSkills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 28px #ffffff6e;
+}
+
+.SoftSkills .SoftSkills-box i{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size:40px;
+    color: rgba(251, 7, 48, 0.84);
+}
+
+.SoftSkills .SoftSkills-box h3{
+    font-size: 15px;
+    display:flex;
+    justify-content: center;
+    margin: 15px 0;
 }
 /* ESTILO DO SOBRE */
 section.sobre{
@@ -410,6 +452,8 @@ footer .line-footer p a{
     color:#fff;
 }
 
+
+/* Responsividade MOBILE */
 @media screen and (max-width:1060px){
     /* Classes Gerais */
     .flex{
@@ -421,6 +465,12 @@ footer .line-footer p a{
         line-height: 30px;
     }
     /* Cabeçalho */
+    .btn-abrir-menu i{
+        color:rgb(243, 36, 71);
+        font-size: 40px;
+        display:block;
+    }
+
     header .interface .logo a img{
         width: 120px;
         height: 150px;
